@@ -1,0 +1,39 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GameCon.cs">
+    <Files>
+      <File FileName="Assets/HelpPipeScript.cs" Line="309" Column="1" />
+      <File FileName="Assets/Scripts/OOP/ZoomButtom.cs" Line="1" Column="1" />
+      <File FileName="Assets/GameCon.cs" Line="1265" Column="49" />
+      <File FileName="Assets/HelpPopupCon.cs" Line="632" Column="3" />
+      <File FileName="Assets/Scripts/PlayerData.cs" Line="206" Column="5" />
+      <File FileName="Assets/HelpPipeCon.cs" Line="313" Column="4" />
+      <File FileName="Assets/PipeScript.cs" Line="1848" Column="34" />
+      <File FileName="Assets/ConveyorPipeScript.cs" Line="127" Column="46" />
+      <File FileName="Assets/BeltScript.cs" Line="20" Column="14" />
+      <File FileName="Assets/TileEffectScript.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="Scripts" expanded="True" />
+            <Node name="GameCon.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>helpPopupCon.sHPipe[next_idx]</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/cwnam/Desktop/PipeStar/Pipe/Assets/Help_Pipe.cs" line="38" />
+      <Breakpoint file="/Users/cwnam/Desktop/PipeStar/Pipe/Assets/HelpPipeCon.cs" line="53" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

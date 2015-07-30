@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{37665C90-5641-FF1B-9F49-EE6B7897D3AE}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_0_2;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_DUCK_TYPING</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Editor\CMVideoSamplingPatcher.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\ActiveAnimationEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\BMFontReader.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\ComponentSelector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\EventDelegateDrawer.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\EventDelegateEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\FreeType.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIContextMenu.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIEditorExtensions.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIEditorTools.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIHandles.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIHelp.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIJson.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIMenu.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\NGUISelectionTools.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\NGUISettings.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\NGUISnap.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\NGUITransformInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\PropertyBindingEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\PropertyReferenceDrawer.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\SpriteSelector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\TweenAlphaEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\TweenColorEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\TweenFOVEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\TweenHeightEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\TweenOrthoSizeEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\TweenPositionEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\TweenRotationEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\TweenScaleEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\TweenTransformEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\TweenVolumeEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\TweenWidthEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UI2DSpriteEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIAnchorEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIAtlasInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIAtlasMaker.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIBasicSpriteEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIButtonColorEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIButtonEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIButtonKeysEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIButtonMessageEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UICameraEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UICameraTool.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UICreateNewUIWizard.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UICreateWidgetWizard.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIDragObjectEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIDrawCallInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIDrawCallViewer.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIEventTriggerEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIFontInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIFontMaker.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIForwardEventsEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIGridEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIImageButtonInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIInputEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIKeyNavigationEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UILabelInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UILocalizeEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIPanelInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIPanelTool.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIPlayAnimationEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIPlayTweenEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIPopupListInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIPrefabTool.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIProgressBarEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIRectEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIRootEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIScrollBarEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIScrollViewEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UISliderEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UISnapshotPointEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UISpriteAnimationInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UISpriteInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIStretchEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UITableEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UITextureInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UITexturePacker.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIToggleInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UITweenerEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetContainerEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIWrapContentEditor.cs" />
+     <None Include="Assets\Resources\MAP_DATA\Norm.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10205.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10195.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10427.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10289.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10085.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10202.txt" />
+     <None Include="Assets\NGUI\ReadMe - 3.8.2.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10389.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10069.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 1.shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10223.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10350.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10176.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10055.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10037.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10068.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10193.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10374.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10465.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10210.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10178.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10057.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 2.shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10485.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10050.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10383.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10052.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10311.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10242.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10056.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10402.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10025.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10023.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10089.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10155.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10111.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10366.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10124.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10159.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10432.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10199.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10233.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10453.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10429.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10278.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10170.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10132.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10452.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10147.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10231.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10181.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10338.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10451.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10182.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10077.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10091.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10269.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10245.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10461.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10237.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10260.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10457.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10295.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10022.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10455.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10162.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10359.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (TextureClip).shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10230.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10368.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10252.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10305.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (TextureClip).shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10004.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10334.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10144.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10087.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10154.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10298.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10378.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10039.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10257.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10294.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10198.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10318.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10072.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10321.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10246.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10287.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10229.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10163.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10444.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10121.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10063.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10117.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10308.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10332.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10073.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10167.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10042.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10240.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10418.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10323.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10160.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10494.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10371.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10437.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10187.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10080.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10408.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10127.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10312.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10266.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10301.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10302.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10196.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10341.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10423.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10291.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10173.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10212.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10329.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10088.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10253.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10472.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10128.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10409.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10316.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10026.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10137.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10361.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10062.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10079.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10164.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10377.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10255.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10320.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10234.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10017.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (TextureClip).shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10458.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10422.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10000.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10097.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10348.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10496.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10211.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10110.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10403.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10172.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10227.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10328.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10498.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10264.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10192.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10352.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10099.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10222.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10219.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10280.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10353.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10319.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10379.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10114.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10203.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10412.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10096.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10425.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10014.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10009.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10169.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10478.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10463.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10092.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10054.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10474.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10326.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10006.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10467.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10241.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10148.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10175.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10394.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10028.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10002.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10186.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10442.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10431.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10143.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10489.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10456.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10333.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10349.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 3.shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10122.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10207.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10036.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10146.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10016.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10209.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10243.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10238.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10078.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10313.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10357.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10094.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10098.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10053.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10276.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10005.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10387.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10388.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10315.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10188.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10484.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10236.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10292.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10304.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10158.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10138.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10047.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10393.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10225.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10372.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10185.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10397.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10473.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10179.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10395.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10285.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10029.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10083.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10470.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10340.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10093.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10103.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10020.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10081.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10303.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10244.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10487.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10407.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10293.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10406.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10331.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10044.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10466.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10283.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10481.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10330.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10438.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10129.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10462.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10263.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10171.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10275.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10201.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10416.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10001.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10343.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10324.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10066.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10065.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10107.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10218.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10024.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10370.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10049.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10382.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10108.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10479.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10385.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10362.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10277.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10125.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10398.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10450.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10101.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10347.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10384.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10067.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10482.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10325.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10235.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10471.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10228.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10258.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10035.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10288.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10300.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10419.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10391.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10271.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10279.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10133.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10261.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10396.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10060.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10215.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10071.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10265.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10086.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10410.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10356.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10041.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10309.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10095.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10119.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10064.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10445.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10449.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10493.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10120.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10262.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10440.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10115.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10045.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10118.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10134.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10274.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10197.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10180.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10033.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10153.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10358.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10480.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10232.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10012.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10290.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10104.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10448.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10433.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10490.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10048.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10184.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10216.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10142.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10059.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10031.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10015.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10426.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10268.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10284.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10404.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10008.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10177.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10273.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10161.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10365.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10380.txt" />
+     <None Include="Assets\Resources\Font\NewGulim_40.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10322.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10018.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10297.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10454.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10135.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10217.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10443.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10354.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10075.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10076.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10189.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10272.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10250.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10112.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10488.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10156.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10460.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10074.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10113.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10281.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10157.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10495.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10213.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10344.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10131.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10136.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10206.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10373.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10337.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10400.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10040.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10010.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10367.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10282.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10247.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10058.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10090.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10469.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10183.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10248.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10314.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10034.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10239.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10214.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10392.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10492.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10405.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10249.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10224.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10434.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10043.txt" />
+     <None Include="Assets\Resources\Font\HOTO02.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10082.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10420.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10428.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10152.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10335.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10084.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10327.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10390.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10375.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10376.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10145.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10032.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10105.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10336.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10435.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10386.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10439.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10116.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10339.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10038.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10415.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10102.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10200.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10299.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10109.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked.shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10421.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10003.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10476.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10100.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10123.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10310.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10226.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10254.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10351.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10220.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10360.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10061.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text (TextureClip).shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10417.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10174.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10477.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10191.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10150.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10307.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10259.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10141.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10070.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10413.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10011.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10401.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10441.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10204.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10030.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10475.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10126.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10381.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10345.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10267.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10019.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10007.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10497.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10491.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10256.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10046.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10364.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10306.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10468.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10194.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10363.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10286.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10459.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10139.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10483.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10251.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10317.txt" />
+     <None Include="Assets\Readme.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10168.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10130.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10346.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10355.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10464.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10296.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10499.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10166.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10411.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10221.txt" />
+     <None Include="Assets\Resources\Images\AdditiveVertexColor.shader" />
+     <None Include="Assets\Resources\MAP_DATA\m10342.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10446.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10051.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10140.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10424.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10270.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10151.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10447.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10106.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10027.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10369.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10208.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10165.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10399.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10021.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10414.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10436.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10430.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10013.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10486.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10190.txt" />
+     <None Include="Assets\Resources\MAP_DATA\m10149.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.BB10.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/BlackBerryPlayer/UnityEditor.BB10.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.SamsungTV.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/STVPlayer/STVPlayer/UnityEditor.SamsungTV.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WebGL.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.LinuxStandalone.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{9DB0E8AA-A6BE-700A-1802-D423485EE67F}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
